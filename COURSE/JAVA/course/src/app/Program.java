@@ -2,28 +2,29 @@ package app;
 
 public class Program {
 
+    // Sem orientação objetos
+    static double total(Product product) {
+        return product.getPrice() * product.getQuantity();
+    }
+
+    static void updatePrice(Product product, double percentage) {
+        var newPrice = product.getPrice() * (1.0 + (percentage/100.0));
+        product.setPrice(newPrice);
+    }
+
     public static void main(String[] args) {
 
         //System.out.println("Oi");
         var p1 = new Product("Laptop", 1000.0, 5);
         var p2 = new Product("Headphones", 200.0, 2); //200.0 double
 
+        var total1 = total(p1);
+        var total2 = total(p2);
 
-        System.out.println(p1);
-        p1.setName("Computador");
+        System.out.println(total1);
+        System.out.println(total2);
+
+        updatePrice(p1, 20.0);
         System.out.println(p1.getPrice());
-        System.out.println(p1.getName());
-        System.out.println(p2);
-        System.out.println(p2.getPrice());
-        System.out.println(p2.getName());
-
-        //p2.price = 300;
-
-        /*
-        System.out.println(p1);
-        System.out.println(p2);
-        System.out.println(String.format("%.2f", p1.price));
-        */
-
     }
 }
