@@ -7,7 +7,7 @@ public class Lesson {
     private Long id;
     private String title;
     private String media;
-    private Instant timestamp;
+    //private Instant timestamp;
 
     public Lesson() {
     }
