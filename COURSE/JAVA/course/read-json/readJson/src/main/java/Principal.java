@@ -1,5 +1,6 @@
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 import entities.Course;
 import entities.Lesson;
 
@@ -11,6 +12,7 @@ public class Principal {
 
     public static void main(String[] args) {
         ObjectMapper objectMapper = new ObjectMapper();
+        objectMapper.registerModule(new JavaTimeModule());
 
         try {
             File jsonFile = new File("/home/moises/Desktop/DEV/algoritmo/COURSE/JAVA/course/read-json/readJson/src/main/resources/file.json");
@@ -27,6 +29,7 @@ public class Principal {
                     System.out.println("\tid: " + lesson.getId());
                     System.out.println("\ttitle: " + lesson.getTitle());
                     System.out.println("\tmedia: " + lesson.getMedia());
+                    System.out.println("\ttimestamp: " + lesson.getTimestamp());
                 }
                 System.out.println("\t--------------------------------");
             }
