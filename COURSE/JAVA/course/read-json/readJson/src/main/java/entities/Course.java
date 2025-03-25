@@ -36,9 +36,14 @@ public class Course {
         return lessons;
     }
 
+    public void setLessons(List<Lesson> lessons) {
+        this.lessons = lessons;
+    }
+
+    /*
     public void setLessons(Lesson item) {
         lessons.add(item);
-    }
+    }*/
 
     @Override
     public String toString() {
