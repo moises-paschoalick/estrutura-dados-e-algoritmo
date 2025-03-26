@@ -73,3 +73,13 @@ console.log(str9);
 const str10 = `Cliente ${name} tem idade ${age} anos e fez ${points.toFixed(2)} pontos.`;
 console.log("str10:");
 console.log(str10);
+
+// Imutabilidade String
+
+let str = "Hello, world!";
+let arr = str.split("");
+arr[7] = "W";
+str = arr.join("");
+
+console.log("String modificada:")
+console.log(str)
