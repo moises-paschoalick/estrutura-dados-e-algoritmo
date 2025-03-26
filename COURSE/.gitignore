@@ -1,0 +1,7 @@
+# Ignorar todas as pastas .idea em qualquer diretório do projeto
+**/.idea/
+
+.idea
+
+# Ignorar a pasta específica do SonarLint
+JAVA/course/read-json/readJson/.idea/sonarlint/issuestore/0/
