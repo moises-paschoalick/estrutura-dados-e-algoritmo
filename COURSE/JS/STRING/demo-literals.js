@@ -75,7 +75,6 @@ console.log("str10:");
 console.log(str10);
 
 // Imutabilidade String
-
 let str = "Hello, world!";
 let arr = str.split("");
 arr[7] = "W";
