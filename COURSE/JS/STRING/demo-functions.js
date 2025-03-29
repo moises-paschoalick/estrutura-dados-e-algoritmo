@@ -59,3 +59,23 @@ console.log("str4.slice(5, 2):", `"${str4.slice(5, 2)}"`);  // ""
 console.log("str4.substring(-3):", `"${str4.substring(-3)}"`);  // "Mozilla" (índices negativos tornam-se 0)
 console.log("str4.substring(2, 5):", `"${str4.substring(2, 5)}"`); // "zil"
 console.log("str4.substring(5, 2):", `"${str4.substring(5, 2)}"`); // "zil" (índices são invertidos)
+
+// toLowerCase()
+console.log("str2.toLowerCase():", str2.toLowerCase());
+
+// toUpperCase()
+console.log("str1.toUpperCase():", str1.toUpperCase());
+console.log(str1) // Não modifica a string original
+
+// trim()
+const hello = '    Hello World!    '
+console.log('"    Hello World!    ".trim():', `"${hello.trim()}"`);
+
+// charAt()
+console.log("str2.charAt(1):", str2.charAt(1));
+
+// startsWith()
+console.log("str3.startWith('Wor'):", str2.startsWith("Wor"));
+
+// endWith()
+console.log("str2.endsWith('!'):", str2.endsWith("!"));
