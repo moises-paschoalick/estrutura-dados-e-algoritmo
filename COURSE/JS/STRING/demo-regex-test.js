@@ -23,3 +23,6 @@ console.log(validateDate("32/02/2024")) // false
 
 console.log(validateDate("31/02/2024")) // true
 console.log(validateDate("07/02/2024")) // true
+
+
+
